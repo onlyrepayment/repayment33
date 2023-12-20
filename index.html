@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* This ensures the content is centered vertically */
+            margin: 0;
+        }
+
+        /* Add your desired styles for the title here */
+        h1 {
+            color: #3498db; /* Change the color to your preference */
+        }
+
+        /* Style for the submit button */
+        #submitBtn {
+            background-color: #2ecc71; /* Change the color to your preference */
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Overdue</h1>
+
+    <!-- Form with a submit button -->
+    <form id="myForm" onsubmit="openWebsite(); return false;">
+        <!-- Submit button -->
+        <input type="submit" id="submitBtn" value="Continue">
+    </form>
+
+    <script>
+        function openWebsite() {
+            // Change the URL to the website you want to open
+            var websiteURL = "siam.html";
+
+            // Open the website in a new tab
+            window.open(websiteURL, "_blank");
+        }
+    </script>
+</body>
+</html>
